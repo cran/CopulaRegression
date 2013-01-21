@@ -49,7 +49,7 @@ n<-200 # number of examples
  tau<-0.3 # Kendall's tau
  family=3 # Clayton copula
  # simulate data
- my.data<-simulate_regression_data(n,alpha,beta,R,S,delta,tau,family,exposure)
+ my.data<-simulate_regression_data(n,alpha,beta,R,S,delta,tau,family,TRUE,exposure)
  x<-my.data[,1]
  y<-my.data[,2]
 # fit marginal ZTP-model with standard errors

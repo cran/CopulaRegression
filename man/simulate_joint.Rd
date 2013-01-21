@@ -7,7 +7,7 @@
 Simulation from the joint model
 }
 \usage{
-simulate_joint(n, mu, delta, lambda, theta, family, max.y = 5000, eps = 1e-05)
+simulate_joint(n, mu, delta, lambda, theta, family, max.y = 5000, eps = 1e-05,zt=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,23 +17,25 @@ simulate_joint(n, mu, delta, lambda, theta, family, max.y = 5000, eps = 1e-05)
 }
   \item{delta}{dispersion parameter of the Gamma distribution
 }
-  \item{lambda}{parameter of the zero-truncated Poisson distribution
+  \item{lambda}{parameter of the (zero-truncated) Poisson distribution
 }
   \item{theta}{copula parameter
 }
   \item{family}{an integer defining the bivariate copula family: 1 = Gauss, 3 = Clayton, 4=Gumbel, 5=Frank
 }
-  \item{max.y}{upper value for the conditional zero truncated Poisson variable, see below for more details
+  \item{max.y}{upper value for the conditional (zero truncated) Poisson variable, see below for more details
 }
   \item{eps}{precision, see below for more details
 }
+\item{zt}{logical. If \code{zt=TRUE}, we use a zero-truncated Poisson variable. Otherwise, we use a Poisson variable. Default is \code{TRUE}.
+} 
 }
-\details{For a Gamma distributed variable X and a zero truncated Possion variable Y, we sample from their joint distribution that is given by the density function
+\details{For a Gamma distributed variable X and a (zero truncated) Possion variable Y, we sample from their joint distribution that is given by the density function
 \deqn{f_{XY}(x,y)=f_X(x) \left(D_u(F_Y(y),F_X(x)|\theta) - D_u(F_Y(y-1),F_X(x)|\theta) \right)\,. }Here \eqn{D_u} is the h-function of a copula  famila \code{family} with copula parameter \code{theta}. First, we sample n observations \code{x} from the marginal Gamma distribution. Second, for each x, we then sample an observation from the conditional distribution of Y given X=x.   In the second step, the conditional distribution is evaluated up to the maximum of  \code{max.y} and the smallest integer >  \code{y.max} for which the conditional probability is smaller than \code{eps}.
 }
 \value{n samples, stored in a \eqn{n \times 2} matrix
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available upon request
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
 
 }
 \author{Nicole Kraemer

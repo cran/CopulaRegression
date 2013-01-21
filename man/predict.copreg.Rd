@@ -23,14 +23,14 @@
 \item{...}{other parameters}
  
 }
-\details{For new data that is defined by the design matrices \code{Rtest} and \code{Stest}, and the exposure time \code{exposure}, the function predicts the values x of the Gamma variable, the values y of the zero truncated Poisson variable, and the policy loss. If \code{independence=TRUE}, the function predicts the policy loss under the assumption that X and Y are independent. 
+\details{For new data that is defined by the design matrices \code{Rtest} and \code{Stest}, and the exposure time \code{exposure}, the function predicts the values x of the Gamma variable, the values y of the (zero truncated) Poisson variable, and the policy loss. If \code{independence=TRUE}, the function predicts the policy loss under the assumption that X and Y are independent. 
 }
 \value{
 \item{x.pred}{predicted value of x}
 \item{y.pred}{predicted value of y}
 \item{l.pred}{predicted value of the policy loss}
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available upon request
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
 
 }
 \author{Nicole Kraemer
@@ -49,7 +49,7 @@ n<-200 # number of examples
  tau<-0.3 # Kendall's tau
  family=3 # Clayton copula
  # simulate data
- my.data<-simulate_regression_data(n,alpha,beta,R,S,delta,tau,family,exposure)
+  my.data<-simulate_regression_data(n,alpha,beta,R,S,delta,tau,family,TRUE,exposure)
  x<-my.data[,1]
  y<-my.data[,2]
  
@@ -58,7 +58,7 @@ n<-200 # number of examples
  
 # fitted values
 
-out<-predict(my.model,R,S)
+\dontrun{out<-predict(my.model,R,S)}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

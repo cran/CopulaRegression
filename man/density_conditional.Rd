@@ -3,16 +3,16 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Conditional density of Y given X
 }
-\description{Conditional density of a zero-truncated Poisson variable Y given X=x for a Gamma-distributed variable X.
+\description{Conditional density of a (zero-truncated) Poisson variable Y given X=x for a Gamma-distributed variable X.
 }
 \usage{
-density_conditional(y,x, mu, delta, lambda, theta, family)
+density_conditional(y,x, mu, delta, lambda, theta, family,zt)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{y}{vector at which the conditional density is evaluated
 }
-\item{x}{Conditioning value
+\item{x}{conditioning value of the Gamma distributed variable
 }
   \item{mu}{expectation of the Gamma distribution
 }
@@ -24,13 +24,14 @@ density_conditional(y,x, mu, delta, lambda, theta, family)
 }
   \item{family}{an integer defining the bivariate copula family: 1 = Gauss, 3 = Clayton, 4=Gumbel, 5=Frank
 }
+\item{zt}{logical. If \code{zt=TRUE}, we use a zero-truncated Poisson variable. Otherwise, we use a Poisson variable. Default is \code{TRUE}.}
 }
-\details{For a Gamma distributed variable X and a zero truncated Possion variable Y with joint density function \eqn{f_{XY}(x,y)}, this function evaluates \deqn{P(Y=y|X=x)=\frac{f_{XY}(x,y)}{f_X(x)}\,.} The joint density function is determined by a copula famila \code{family} with copula parameter \code{theta}. 
+\details{For a Gamma distributed variable X and a (zero truncated) Possion variable Y with joint density function \eqn{f_{XY}(x,y)}, this function evaluates \deqn{P(Y=y|X=x)=\frac{f_{XY}(x,y)}{f_X(x)}\,.} The joint density function is determined by a copula famila \code{family} with copula parameter \code{theta}. 
 
 }
 \value{vector of length \code{length(y)}
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available upon request
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
 
 }
 \author{Nicole Kraemer, Daniel Silvestrini

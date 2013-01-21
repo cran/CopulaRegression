@@ -6,13 +6,13 @@
 \description{Computes the maximum-likelihood estimates for the regression coefficients and the copula parameter.
 }
 \usage{
-mle_joint(alpha0,beta0,theta0, delta0, x, y, R, S, family, exposure, sd.error = FALSE)
+mle_joint(alpha0,beta0,theta0, delta0, x, y, R, S, family, exposure, sd.error = FALSE,zt=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{alpha0}{The starting value of the regression coefficients for the Gamma regression
 }
-\item{beta0}{The starting value of the regression coefficients for the zero-truncated Poisson regression
+\item{beta0}{The starting value of the regression coefficients for the (zero-truncated) Poisson regression
 }
 \item{theta0}{The starting value of the copula parameter
 }
@@ -31,12 +31,14 @@ mle_joint(alpha0,beta0,theta0, delta0, x, y, R, S, family, exposure, sd.error = 
   \item{exposure}{exposure time for the zero-truncated Poisson model, all entries of the vector have to be \eqn{>0}. Default is a constant vector of 1.
 }
  \item{sd.error}{logical. Should the standard errors of the regression coefficients be returned? Default is FALSE.}
+\item{zt}{logical. If \code{zt=TRUE}, we use a zero-truncated Poisson variable. Otherwise, we use a Poisson variable. Default is \code{TRUE}.
+} 
 }
 \details{This is an internal function called by \code{\link{copreg}}.
 }
 \value{
 \item{alpha}{estimated coefficients for X, including the intercept}
-\item{beta}{estimated coefficients for X, including the intercept}
+\item{beta}{estimated coefficients for Y, including the intercept}
 \item{sd.alpha}{estimated standard deviation (if \code{sd.error=TRUE})}
 \item{sd.beta}{estimated standard deviation (if \code{sd.error=TRUE})}
 \item{sd.g.theta}{estimated standard deviation of \eqn{g(\theta)} (if \code{sd.error=TRUE})}
@@ -49,7 +51,7 @@ mle_joint(alpha0,beta0,theta0, delta0, x, y, R, S, family, exposure, sd.error = 
 
 
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available upon request
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
 
 }
 \author{Nicole Kraemer

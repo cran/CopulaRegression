@@ -29,7 +29,7 @@ we prefer copula family 2. Otherwise, no decision among the two copula families 
 \value{value of the test statistic
 
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available upon request
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
 
 Vuong, Q. H. (1989). Ratio tests for model selection and non-nested hypotheses. Econometrica 57
 (2), 307-333.

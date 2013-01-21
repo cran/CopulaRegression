@@ -1,0 +1,9 @@
+***********************************************
+*** Changes for R-package CopulaRegresssion ***
+*** Nicole Kraemer <kraemer@ma.tum.de>      ***
+***********************************************
+
+--- Version 0.1-1 (January 22, 2013) ---
+
+- The count variable Y can a Poisson variable or a zero-truncated Poisson variable.
+

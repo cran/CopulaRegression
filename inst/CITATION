@@ -1,0 +1,17 @@
+citHeader("To cite CopulaRegression in publications please use:")
+
+citEntry(entry = "Article",
+  title        = "Total Loss Estimation using Copula-based Regression Models",
+  author       = personList(as.person("N. Kraemer"),
+                   as.person("E.C. Brechmann"),as.person("D. Silvestrini"),as.person("C. Czado")),
+  journal      = "submitted",
+  year         = "2012",
+  url          = "http://http://arxiv.org/abs/1209.5356",
+
+  textVersion  =
+  paste("N. Kraemer, E.C. Brechmann, D. Silvestrini, C. Czado (2012).",
+        "Total Loss Estimation using Copula-based Regression Models",
+        "submitted",
+        "URL http://http://arxiv.org/abs/1209.5356")
+)
+
