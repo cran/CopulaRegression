@@ -67,11 +67,9 @@ in terms of a copula family with parameter \eqn{\theta}. }
 \item{loglik0}{overall loglikelihood, under independence, i.e. sum of \code{ll0}}
 \item{zt}{The value of \code{zt}
 }
-
-
-
 \item{tau_IFM}{estimated Kendall's \eqn{\tau} based on the marginal models, using inference from margins}
 \item{theta_ifm}{estimated copula parameter, estimated via inference from margins}
+\item{npar}{the number of estimated parameters in the model}
 }
 
 \references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356

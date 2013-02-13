@@ -13,8 +13,8 @@ distribution (represented by a parametric copula family) is estimated using maxi
 \tabular{ll}{
 Package: \tab CopulaRegression\cr
 Type: \tab Package\cr
-Version: \tab 0.1-1\cr
-Date: \tab 2013-01-21\cr
+Version: \tab 0.1-2\cr
+Date: \tab 2013-02-13\cr
 License: \tab GPL >=2\cr
 }
 

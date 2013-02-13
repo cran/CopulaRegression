@@ -5,7 +5,7 @@
 \description{This function compares two bivariate copula-based regression models
 }
 \usage{
-vuongtest(model1,model2)
+vuongtest(model1,model2,selection="AIC")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -13,6 +13,7 @@ vuongtest(model1,model2)
 }
   \item{model2}{\code{copreg} object returned from \code{copreg}
 }
+\item{selection}{model selection criterion. Options are AIC and BIC. Default ist AIC.}
 }
 \details{Let us denote by \eqn{{ \ell}^{(1)},\,{\bm \ell}^{(2)}} the vectors of pointwise loglikelihoods for a model with copula family 1 and 2 respectively. Here, we assume that both models have the same degrees of freedom, i.e. the same number of parameters. We now compute the differences of the pointwise loglikelihood as
 \deqn{m_i:=\ell^{(1)}_i - \ell^{(2)}_i,\ i=1,\ldots,n\,.}
@@ -25,7 +26,7 @@ is asymptotically normally distributed with zero mean and unit variance. Hence, 
 \deqn{T_V> \Phi^{-1}\left(1-\frac{\alpha}{2}\right)\,,}
 where \eqn{\Phi} denotes the standard normal distribution function. If
 \deqn{T_V< \Phi^{-1}\left(\frac{\alpha}{2}\right)\,,}
-we prefer copula family 2. Otherwise, no decision among the two copula families is possible. }
+we prefer copula family 2. Otherwise, no decision among the two copula families is possible. If the models contain different numbers of estimated parameters, the test statistic is corrected using either the AIC or BIC criterion.}
 \value{value of the test statistic
 
 }
@@ -37,11 +38,30 @@ Vuong, Q. H. (1989). Ratio tests for model selection and non-nested hypotheses. 
 }
 \author{Nicole Kraemer
 }
-\note{Currently, we do not correct for different degrees of freedom of the two models.
-}
+
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{\code{\link{copreg}}
+}
+\examples{
+n<-200 # number of examples
+ R<-S<-cbind(rep(1,n),rnorm(n)) # design matrices with intercept 
+ alpha<-beta<-c(1,-1) # regression coefficients
+ exposure<-rep(1,n) # constant exposure
+ delta<-0.5 # dispersion parameter
+ tau<-0.3 # Kendall's tau
+ family=3 # Clayton copula
+ # simulate data
+ my.data<-simulate_regression_data(n,alpha,beta,R,S,delta,tau,family,TRUE,exposure)
+ x<-my.data[,1]
+ y<-my.data[,2]
+ 
+ # joint model without standard errors
+ my.model.clayton<-copreg(x,y,R,S,family=3,exposure,FALSE,TRUE)
+ my.model.gauss<-copreg(x,y,R,S,family=1,exposure,FALSE,TRUE)
+ #
+ vuongtest(my.model.clayton,my.model.gauss)
+
 }
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the

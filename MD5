@@ -1,7 +1,7 @@
-c21a8f40ab378052bbe1036c4b7693c5 *DESCRIPTION
+506413a871ad3ec7f033111919bb972e *DESCRIPTION
 990406f58c39f109a18af56b0256c4e2 *NAMESPACE
 198bf7a1277dfb7bfded025bdd240216 *R/D_u.R
-b7e638aab9651b0853995365b49666dc *R/copreg.R
+977c7fe59e73fa71b11ed28f17263567 *R/copreg.R
 fa77820b45cab84828b5995dbd0a8216 *R/density_conditional.R
 7444122ee0c4f371c00123c4d10d4eba *R/density_joint.R
 572a26e2fcbfb77f24e7a382cf8ca315 *R/dgam.R
@@ -21,14 +21,14 @@ e687de3f43b5b945257be5b8e19856ea *R/qpolicy_loss.R
 5e2369d22dc2407790491f554f182ffd *R/simulate_joint.R
 cced6a2366a02249f3ef97ff8a226cf3 *R/simulate_regression_data.R
 f4ff00440b9c54d211e5fd47896af094 *R/theta2z.R
-c932d31191e974a7dcd892b19ef8d897 *R/vuongtest.R
+51456cffe5d7fe8fb66ec19acb616487 *R/vuongtest.R
 5395f6c6b4ec9540db2cf7a509ece000 *R/z2theta.R
 53fa982afa1628a129947d22aebdfcfe *R/ztp.glm.R
 45f62c5b26e9cdea0d04c59a415712aa *inst/CITATION
-c33ffc3815d50e55c4ab10c3d09198b4 *inst/ChangeLog
-46a9a88005dd78acce3da577cfb5f7a4 *man/CopulaRegression-package.Rd
+239b166f92e361ab5c3af83fd02e7ccc *inst/ChangeLog
+44ad6800eca383aac3199762e81e07bf *man/CopulaRegression-package.Rd
 20c4d5e824bb42fbdb52015dd3380008 *man/D_u.Rd
-b253bc214eff991927cbdab2589a1383 *man/copreg.Rd
+a1064061f0061f3aa1900ed487dcde91 *man/copreg.Rd
 407874ecbbc66891cc51ae856a743d81 *man/density_conditional.Rd
 cd76bc4bf2d04514eb527e4b26c04104 *man/density_joint.Rd
 647b4b722de65edca074cce24f0bdffc *man/dgam.Rd
@@ -47,6 +47,6 @@ e51cccecdc5b78520288ecc493d1e805 *man/pztp.Rd
 a0650123f340dd59f82206491eb0111e *man/simulate_joint.Rd
 53e7e01a56a085760a796873d25b132b *man/simulate_regression_data.Rd
 fad0daa4888ed590529cc31f3163f8ca *man/theta2z.Rd
-7cf3858665ad199b6641c3b5d3034116 *man/vuongtest.Rd
+fa30033b4a1fbd23df1604e7ab20cfb1 *man/vuongtest.Rd
 39dd0c25daa2fa4a2c56d7c6e4b58f21 *man/z2theta.Rd
 0b67c56dd41f14b43d5578119c6c50a5 *man/ztp.glm.Rd
