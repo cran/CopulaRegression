@@ -3,6 +3,12 @@
 *** Nicole Kraemer <kraemer@ma.tum.de>      ***
 ***********************************************
 
+--- Version 0.1-3 (March 13, 2013) ---
+
+- epolicy_loss now also computes the variance of the policy loss.
+- Bug fix: AIC criterion for the Vuong test.  
+
+
 --- Version 0.1-2 (February 13, 2013) ---
 
 - The Vuong test now corrects for different numbers of parameters.

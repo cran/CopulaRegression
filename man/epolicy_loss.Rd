@@ -4,10 +4,10 @@
 \title{Expectation of the policy loss
 }
 \description{
-Expectation of the policy loss
+Expectation and variance of the policy loss
 }
 \usage{
-epolicy_loss(mu, delta, lambda, theta, family, y.max = 300,zt=TRUE)
+epolicy_loss(mu, delta, lambda, theta, family, y.max = 300,zt=TRUE,compute.var=FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -25,11 +25,15 @@ epolicy_loss(mu, delta, lambda, theta, family, y.max = 300,zt=TRUE)
 }
 \item{zt}{logical. If \code{zt=TRUE}, we use a zero-truncated Poisson variable. Otherwise, we use a Poisson variable. Default is \code{TRUE}.
 } 
+\item{compute.var}{logical. If \code{compute.var=TRUE}, we also compute the variance of the policy loss. Default is \code{FALSE}.
+} 
 }
 \details{
 For a Gamma distributed variable X and a (zero truncated) Possion variable Y, the policy loss is defined as \eqn{L=X\cdot Y}. Its density is an infinite sum of weighted Gamma densities. The parameter \code{y.max} is the upper value of the finite sum that approximates the infinite sum.
 }
-\value{expectation of the policy loss
+\value{
+\item{mean}{expectation of the policy loss}
+\item{var}{variance of the policy loss}
 }
 \references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
 

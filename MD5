@@ -1,4 +1,4 @@
-506413a871ad3ec7f033111919bb972e *DESCRIPTION
+d36ea80fe6c6d54ca186c622bad89cc5 *DESCRIPTION
 990406f58c39f109a18af56b0256c4e2 *NAMESPACE
 198bf7a1277dfb7bfded025bdd240216 *R/D_u.R
 977c7fe59e73fa71b11ed28f17263567 *R/copreg.R
@@ -7,7 +7,7 @@ fa77820b45cab84828b5995dbd0a8216 *R/density_conditional.R
 572a26e2fcbfb77f24e7a382cf8ca315 *R/dgam.R
 8bc5f4ca2037ac4cc6d9425664390e89 *R/dpolicy_loss.R
 cb407952041b8e4e5eeab3d8885decf3 *R/dztp.R
-71c48c4b0478d1349cc22f6b829b4825 *R/epolicy_loss.R
+f818c4bda53d433e0805a36483db4bec *R/epolicy_loss.R
 b044a9be821dc1832d81d640a883e7fb *R/loglik_joint.R
 1d7adfc1b80ea682e914caeb2efeb2be *R/mle_joint.R
 3f2e02440402766625aad2e937c756f1 *R/mle_marginal.R
@@ -21,12 +21,12 @@ e687de3f43b5b945257be5b8e19856ea *R/qpolicy_loss.R
 5e2369d22dc2407790491f554f182ffd *R/simulate_joint.R
 cced6a2366a02249f3ef97ff8a226cf3 *R/simulate_regression_data.R
 f4ff00440b9c54d211e5fd47896af094 *R/theta2z.R
-51456cffe5d7fe8fb66ec19acb616487 *R/vuongtest.R
+f800199c57cef5df19637593c7682948 *R/vuongtest.R
 5395f6c6b4ec9540db2cf7a509ece000 *R/z2theta.R
 53fa982afa1628a129947d22aebdfcfe *R/ztp.glm.R
 45f62c5b26e9cdea0d04c59a415712aa *inst/CITATION
-239b166f92e361ab5c3af83fd02e7ccc *inst/ChangeLog
-44ad6800eca383aac3199762e81e07bf *man/CopulaRegression-package.Rd
+319105b561e7a12cacf8cd67dbea5234 *inst/ChangeLog
+c70c8f0d40fd488ad043b9e1e9a821df *man/CopulaRegression-package.Rd
 20c4d5e824bb42fbdb52015dd3380008 *man/D_u.Rd
 a1064061f0061f3aa1900ed487dcde91 *man/copreg.Rd
 407874ecbbc66891cc51ae856a743d81 *man/density_conditional.Rd
@@ -34,7 +34,7 @@ cd76bc4bf2d04514eb527e4b26c04104 *man/density_joint.Rd
 647b4b722de65edca074cce24f0bdffc *man/dgam.Rd
 d33d475d89a5c21836023ec1eb2d22de *man/dpolicy_loss.Rd
 b0fcbcaec9b71cb00c5fa42a3e76ad51 *man/dztp.Rd
-e7fc38d7c25812d346792c829c6b57ef *man/epolicy_loss.Rd
+1051c540b89574f0f1c244e4bda56b17 *man/epolicy_loss.Rd
 291464636a414e7ecbc6a9d2a45a5e24 *man/loglik_joint.Rd
 cb9b8f26a58a31eac3d14e162ab4ee8f *man/mle_joint.Rd
 2d3a0f00cf656436afb61924048b8a0e *man/mle_marginal.Rd
