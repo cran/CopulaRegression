@@ -4,14 +4,16 @@ citEntry(entry = "Article",
   title        = "Total Loss Estimation using Copula-based Regression Models",
   author       = personList(as.person("N. Kraemer"),
                    as.person("E.C. Brechmann"),as.person("D. Silvestrini"),as.person("C. Czado")),
-  journal      = "submitted",
-  year         = "2012",
-  url          = "http://http://arxiv.org/abs/1209.5356",
+  journal      = "Insurance: Mathematics and Economics",
+  year         = "2013",
+  volume       = "53",
+  issue        = "3",
+  pages        = "829 - 839",
+  url          = "http://www.sciencedirect.com/science/article/pii/S0167668713001364",
 
   textVersion  =
-  paste("N. Kraemer, E.C. Brechmann, D. Silvestrini, C. Czado (2012).",
+  paste("N. Kraemer, E.C. Brechmann, D. Silvestrini, C. Czado (2013).",
         "Total Loss Estimation using Copula-based Regression Models",
-        "submitted",
-        "URL http://http://arxiv.org/abs/1209.5356")
+        "Insurance: Mathematics and Economics 53 (3), 829 - 839")
 )
 

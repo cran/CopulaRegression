@@ -35,7 +35,7 @@ simulate_joint(n, mu, delta, lambda, theta, family, max.y = 5000, eps = 1e-05,zt
 }
 \value{n samples, stored in a \eqn{n \times 2} matrix
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \author{Nicole Kraemer
@@ -47,6 +47,7 @@ simulate_joint(n, mu, delta, lambda, theta, family, max.y = 5000, eps = 1e-05,zt
 \seealso{\code{\link{density_joint}}, \code{\link{simulate_regression_data}},\code{\link{density_conditional}}
 }
 \examples{
+library(VineCopula)
 n<-100 # number of observations
 mu<-1000
 delta<-0.09

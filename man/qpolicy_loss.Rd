@@ -32,7 +32,7 @@ For a Gamma distributed variable X and a (zero truncated) Possion variable Y, th
 }
 \value{quantile, evaluated at q
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available upon request
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \author{Nicole Kraemer
@@ -44,6 +44,7 @@ For a Gamma distributed variable X and a (zero truncated) Possion variable Y, th
 \seealso{\code{\link{ppolicy_loss}},\code{\link{epolicy_loss}},\code{\link{dpolicy_loss}}
 }
 \examples{
+library(VineCopula)
 mu<-1000
 delta<-0.09
 lambda<-2.5

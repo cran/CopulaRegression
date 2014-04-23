@@ -3,6 +3,11 @@
 *** Nicole Kraemer <kraemer@ma.tum.de>      ***
 ***********************************************
 
+--- Version 0.1-4 (April 03, 2014) ---
+
+- Bug fix: The package imports MASS package directly to assure compitability with the VineCopula package.
+- An updated reference for the accompanying paper is included.
+
 --- Version 0.1-3 (March 13, 2013) ---
 
 - epolicy_loss now also computes the variance of the policy loss.

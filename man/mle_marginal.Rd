@@ -45,7 +45,7 @@ mle_marginal(x, y, R, S, family,exposure,sd.error=FALSE,zt=TRUE)
 \item{loglik.ifm}{overall loglikelihood, using \code{theta.ifm} as the copula parameter, i.e. sum of \code{ll.ifm}}
 }
 
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \author{Nicole Kraemer

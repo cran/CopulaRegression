@@ -6,7 +6,7 @@
 \description{Loglikelihood of the joint regression model
 }
 \usage{
-loglik_joint(alpha,beta,theta, delta, x, y, R, S, family, exposure, negative = TRUE,zt=TRUE)
+loglik_joint(alpha,beta,theta, delta, x, y, R, S, family, exposure, negative,zt)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -41,7 +41,7 @@ loglik_joint(alpha,beta,theta, delta, x, y, R, S, family, exposure, negative = T
 \value{
 loglikelihood 
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \author{Nicole Kraemer, Daniel Silvestrini
@@ -53,6 +53,7 @@ loglikelihood
 \seealso{\code{\link{density_joint}}
 }
 \examples{
+library(VineCopula)
  n<-200 # number of examples
  R<-S<-cbind(rep(1,n),rnorm(n)) # design matrices with intercept 
  alpha<-beta<-c(1,-1) # regression coefficients

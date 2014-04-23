@@ -72,7 +72,7 @@ in terms of a copula family with parameter \eqn{\theta}. }
 \item{npar}{the number of estimated parameters in the model}
 }
 
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \author{Nicole Kraemer

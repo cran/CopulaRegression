@@ -13,15 +13,15 @@ distribution (represented by a parametric copula family) is estimated using maxi
 \tabular{ll}{
 Package: \tab CopulaRegression\cr
 Type: \tab Package\cr
-Version: \tab 0.1-3\cr
-Date: \tab 2013-03-13\cr
+Version: \tab 0.1-4\cr
+Date: \tab 2014-04-23\cr
 License: \tab GPL >=2\cr
 }
 
 }
 \author{Nicole Kraemer 
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \keyword{package}

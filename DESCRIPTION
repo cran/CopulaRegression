@@ -1,11 +1,11 @@
 Package: CopulaRegression
 Type: Package
 Title: Bivariate Copula Based Regression Models
-Version: 0.1-3
-Depends: VineCopula
-Date: 2013-03-13
+Version: 0.1-4
+Depends: R (>= 2.11.0), MASS, VineCopula
+Date: 2014-04-23
 Author: Nicole Kraemer, Daniel Silvestrini
-Maintainer: Nicole Kraemer <kraemer@ma.tum.de>
+Maintainer: Nicole Kraemer <nicole.kraemer@tum.de>
 Description: This R-packages presents a bivariate, copula-based model
         for the joint distribution of a pair of continuous and discrete
         random variables. The two marginal random variables are modeled
@@ -13,7 +13,7 @@ Description: This R-packages presents a bivariate, copula-based model
         (represented by a parametric copula family) is estimated using
         maximum-likelihood techniques.
 License: GPL (>= 2.0)
-Packaged: 2013-03-13 10:04:35 UTC; kraemer
+Packaged: 2014-04-23 09:44:53 UTC; ga29xul
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-03-13 11:13:21
+Date/Publication: 2014-04-23 12:03:47

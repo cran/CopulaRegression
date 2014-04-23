@@ -28,7 +28,7 @@ density_joint(x, y, mu, delta, lambda, theta, family,zt)
 \details{For a Gamma distributed variable X and a (zero truncated) Possion variable Y, their joint density function is given by
 \deqn{f_{XY}(x,y)=f_X(x) \left(D_u(F_Y(y),F_X(x)|\theta) - D_u(F_Y(y-1),F_X(x)|\theta) \right)\,. }Here \eqn{D_u} is the h-function of a copula  famila \code{family} with copula parameter \code{theta}. 
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \author{Nicole Kraemer

@@ -31,7 +31,7 @@ dpolicy_loss(l, mu, delta, lambda, theta, family, y.max = 300,zt=TRUE)
 }
 \value{density, evaluated at the vector l
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 }
 \author{Nicole Kraemer
 }
@@ -46,6 +46,7 @@ lambda and mu can be scalars, or vectors of the same length as l
 }
 \examples{
 # example taken from the paper
+library(VineCopula)
 mu<-1000
 delta<-0.09
 lambda<-2.5

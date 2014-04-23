@@ -6,7 +6,7 @@
 \description{Computes the maximum-likelihood estimates for the regression coefficients and the copula parameter.
 }
 \usage{
-mle_joint(alpha0,beta0,theta0, delta0, x, y, R, S, family, exposure, sd.error = FALSE,zt=TRUE)
+mle_joint(alpha0,beta0,theta0, delta0, x, y, R, S, family, exposure, sd.error,zt)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -51,7 +51,7 @@ mle_joint(alpha0,beta0,theta0, delta0, x, y, R, S, family, exposure, sd.error = 
 
 
 }
-\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2012): Total loss estimation using copula-based regression models. Preprint, available at http://arxiv.org/abs/1209.5356
+\references{N. Kraemer, E. Brechmann, D. Silvestrini, C. Czado (2013): Total loss estimation using copula-based regression models. Insurance: Mathematics and Economics 53 (3), 829 - 839.
 
 }
 \author{Nicole Kraemer
