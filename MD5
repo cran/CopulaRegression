@@ -1,4 +1,4 @@
-5d42f4adf5f42c9dd42b11a58daea7df *DESCRIPTION
+e575286281853c9910db89a28ae48edf *DESCRIPTION
 09201b2808107e2ed82caa802f2043af *NAMESPACE
 198bf7a1277dfb7bfded025bdd240216 *R/D_u.R
 977c7fe59e73fa71b11ed28f17263567 *R/copreg.R
@@ -25,8 +25,8 @@ f800199c57cef5df19637593c7682948 *R/vuongtest.R
 5395f6c6b4ec9540db2cf7a509ece000 *R/z2theta.R
 53fa982afa1628a129947d22aebdfcfe *R/ztp.glm.R
 79f43cbd43cbc23fc44d9301fbc37b71 *inst/CITATION
-0b1a65982f10cc4ca204e70ecbaea6dc *inst/ChangeLog
-d9f73ed376625ac84b09cf428ce9b79f *man/CopulaRegression-package.Rd
+31f01b4804b2211983d8ba2c8fc9710f *inst/ChangeLog
+e16607e1bac495975e11cf21c5360bcf *man/CopulaRegression-package.Rd
 20c4d5e824bb42fbdb52015dd3380008 *man/D_u.Rd
 4359e04e0439710677952f666c7a35b0 *man/copreg.Rd
 63ce796a031c46668de587e2d69a4db8 *man/density_conditional.Rd

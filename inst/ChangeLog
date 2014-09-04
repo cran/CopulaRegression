@@ -1,7 +1,11 @@
-***********************************************
-*** Changes for R-package CopulaRegresssion ***
-*** Nicole Kraemer <kraemer@ma.tum.de>      ***
-***********************************************
+****************************************************
+*** Changes for R-package CopulaRegresssion      ***
+*** Nicole Kraemer <kraemer_r_packages@yahoo.de> ***
+****************************************************
+
+--- Version 0.1-5 (September 04, 2014)
+
+Updated maintainer's email address.
 
 --- Version 0.1-4 (April 03, 2014) ---
 
